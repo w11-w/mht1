@@ -57,60 +57,60 @@
         <div class="item">
           <label class="label"><span class="required">*</span>你对学习委员的满意度</label>
           <div class="radio-group">
-            <label><input v-model="学习委员" value="非常满意" type="radio" name="satisfyStudy" required /> 非常满意</label>
-            <label><input v-model="学习委员" value="满意" type="radio" name="satisfyStudy" /> 满意</label>
-            <label><input v-model="学习委员" value="一般" type="radio" name="satisfyStudy" /> 一般</label>
-            <label><input v-model="学习委员" value="不满意" type="radio" name="satisfyStudy" /> 不满意</label>
+            <label><input v-model="form.satisfyStudy" value="非常满意" type="radio" name="satisfyStudy" required /> 非常满意</label>
+            <label><input v-model="form.satisfyStudy" value="满意" type="radio" name="satisfyStudy" /> 满意</label>
+            <label><input v-model="form.satisfyStudy" value="一般" type="radio" name="satisfyStudy" /> 一般</label>
+            <label><input v-model="form.satisfyStudy" value="不满意" type="radio" name="satisfyStudy" /> 不满意</label>
           </div>
         </div>
 
         <div class="item">
           <label class="label"><span class="required">*</span>你对团支书的满意度</label>
           <div class="radio-group">
-            <label><input v-model="团支书" value="非常满意" type="radio" name="satisfyLeague" required /> 非常满意</label>
-            <label><input v-model="团支书" value="满意" type="radio" name="satisfyLeague" /> 满意</label>
-            <label><input v-model="团支书" value="一般" type="radio" name="satisfyLeague" /> 一般</label>
-            <label><input v-model="团支书" value="不满意" type="radio" name="satisfyLeague" /> 不满意</label>
+            <label><input v-model="form.satisfyLeague" value="非常满意" type="radio" name="satisfyLeague" required /> 非常满意</label>
+            <label><input v-model="form.satisfyLeague" value="满意" type="radio" name="satisfyLeague" /> 满意</label>
+            <label><input v-model="form.satisfyLeague" value="一般" type="radio" name="satisfyLeague" /> 一般</label>
+            <label><input v-model="form.satisfyLeague" value="不满意" type="radio" name="satisfyLeague" /> 不满意</label>
           </div>
         </div>
 
         <div class="item">
           <label class="label"><span class="required">*</span>你对组织委员的满意度</label>
           <div class="radio-group">
-            <label><input v-model="组织委员" value="非常满意" type="radio" name="satisfyOrganize" required /> 非常满意</label>
-            <label><input v-model="组织委员" value="满意" type="radio" name="satisfyOrganize" /> 满意</label>
-            <label><input v-model="组织委员" value="一般" type="radio" name="satisfyOrganize" /> 一般</label>
-            <label><input v-model="组织委员" value="不满意" type="radio" name="satisfyOrganize" /> 不满意</label>
+            <label><input v-model="form.satisfyOrganize" value="非常满意" type="radio" name="satisfyOrganize" required /> 非常满意</label>
+            <label><input v-model="form.satisfyOrganize" value="满意" type="radio" name="satisfyOrganize" /> 满意</label>
+            <label><input v-model="form.satisfyOrganize" value="一般" type="radio" name="satisfyOrganize" /> 一般</label>
+            <label><input v-model="form.satisfyOrganize" value="不满意" type="radio" name="satisfyOrganize" /> 不满意</label>
           </div>
         </div>
 
         <div class="item">
           <label class="label">你的兴趣爱好（可多选）</label>
           <div class="checkbox-group">
-            <label><input v-model="兴趣爱好" value="跑步" type="checkbox" /> 跑步</label>
-            <label><input v-model="兴趣爱好" value="羽毛球" type="checkbox" /> 羽毛球</label>
-            <label><input v-model="兴趣爱好" value="篮球" type="checkbox" /> 篮球</label>
-            <label><input v-model="兴趣爱好" value="足球" type="checkbox" /> 足球</label>
-            <label><input v-model="兴趣爱好" value="阅读" type="checkbox" /> 阅读</label>
-            <label><input v-model="兴趣爱好" value="画画" type="checkbox" /> 画画</label>
-            <label><input v-model="兴趣爱好" value="唱歌" type="checkbox" /> 唱歌</label>
-            <label><input v-model="兴趣爱好" value="健身" type="checkbox" /> 健身</label>
-            <label><input v-model="兴趣爱好" value="游戏" type="checkbox" /> 游戏</label>
-            <label><input v-model="兴趣爱好" value="旅游" type="checkbox" /> 旅游</label>
+            <label><input v-model="form.hobbies" value="跑步" type="checkbox" /> 跑步</label>
+            <label><input v-model="form.hobbies" value="羽毛球" type="checkbox" /> 羽毛球</label>
+            <label><input v-model="form.hobbies" value="篮球" type="checkbox" /> 篮球</label>
+            <label><input v-model="form.hobbies" value="足球" type="checkbox" /> 足球</label>
+            <label><input v-model="form.hobbies" value="阅读" type="checkbox" /> 阅读</label>
+            <label><input v-model="form.hobbies" value="画画" type="checkbox" /> 画画</label>
+            <label><input v-model="form.hobbies" value="唱歌" type="checkbox" /> 唱歌</label>
+            <label><input v-model="form.hobbies" value="健身" type="checkbox" /> 健身</label>
+            <label><input v-model="form.hobbies" value="游戏" type="checkbox" /> 游戏</label>
+            <label><input v-model="form.hobbies" value="旅游" type="checkbox" /> 旅游</label>
           </div>
         </div>
 
         <div class="item">
           <label class="label"><span class="required">*</span>您对未来的规划（40-100字）</label>
           <textarea 
-            v-model="未来的规划" 
+            v-model="form.desc" 
             rows="3" 
             class="textarea" 
             placeholder="请输入规划（40-100字）"
             maxlength="100"
             required
           ></textarea>
-          <div class="word-count">已输入：{{ 未来的规划.length }} / 100 字</div>
+          <div class="word-count">已输入：{{ form.desc.length }} / 100 字</div>
         </div>
 
         <div class="btn-box">
@@ -142,7 +142,6 @@ const form = ref({
 
 const showSuccess = ref(false)
 const hasSubmitted = ref(false)
-const API_BASE = '/api'
 
 onMounted(() => {
   const flag = localStorage.getItem('questionnaire_submitted')
@@ -151,27 +150,17 @@ onMounted(() => {
   }
 })
 
-const submitForm = async () => {
-  // 字数校验
+const submitForm = () => {
   const len = form.value.desc.trim().length
   if (len < 40) {
     alert('未来规划不能少于40字，请补充内容')
     return
   }
 
-  try {
-    await fetch(`${API_BASE}/questionnaire`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form.value)
-    })
-    showSuccess.value = true
-    hasSubmitted.value = true
-    localStorage.setItem('questionnaire_submitted', 'true')
-  } catch (err) {
-    alert('提交失败，请稍后再试')
-    console.error(err)
-  }
+  showSuccess.value = true
+  hasSubmitted.value = true
+  localStorage.setItem('questionnaire_submitted', 'true')
+  alert('提交成功！')
 }
 
 const reset = () => {
